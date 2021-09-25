@@ -1,0 +1,41 @@
+/* Custom styles for the project "Lillah Brick Company" */
+
+.brand-logo {
+    margin-top: 5%;
+}
+
+.modal-header {
+    display: block;
+}
+
+.addWorker {
+    display: none;
+}
+
+.editWorker {
+    display: none;
+}
+
+.error {
+    color: red;
+}
+
+.borrowBtn {
+    margin-right: 2%;
+}
+
+.historyClass {
+    display: inline-flex;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 2%;
+}
+.historyClass > h2 {
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.col-md-4 {
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
