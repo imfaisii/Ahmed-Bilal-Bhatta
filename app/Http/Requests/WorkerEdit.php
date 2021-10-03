@@ -24,7 +24,7 @@ class WorkerEdit extends FormRequest
     public function rules()
     {
         return [
-            'id' => 'required|numeric'
+            'id' => 'required|numeric|exists:workers,id'
         ];
     }
 }

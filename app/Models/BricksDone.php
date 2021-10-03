@@ -13,6 +13,8 @@ class BricksDone extends Model
     protected $fillable = [
         'total_bricks',
         'rate',
+        'round_number',
+        'season',
         'worker_id'
     ];
 

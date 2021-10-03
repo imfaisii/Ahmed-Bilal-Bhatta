@@ -17,6 +17,8 @@ class CreateBricksDonesTable extends Migration
             $table->id();
             $table->bigInteger('total_bricks');
             $table->bigInteger('rate');
+            $table->string('season');
+            $table->integer('round_number');
             $table->unsignedBigInteger('worker_id');
             $table->foreign('worker_id')->references('id')->on('workers')->onDelete('cascade');
             $table->softDeletes();

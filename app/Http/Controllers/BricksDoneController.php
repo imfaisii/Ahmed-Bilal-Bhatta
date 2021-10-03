@@ -2,8 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\BrickDoneRequest;
 use App\Models\BricksDone;
+use App\Models\Worker;
+use Illuminate\Database\QueryException;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class BricksDoneController extends Controller
 {
@@ -15,9 +19,16 @@ class BricksDoneController extends Controller
     public function index()
     {
         //
-        $workers = BricksDone::with(['worker'])->get();
-        // return $workers;
+        $workers = Worker::all();
         return view('worker.index')->with('workers', $workers);
+    }
+
+    public function view($id)
+    {
+        //
+        $workers = BricksDone::where('worker_id', $id)->get();
+        $workerName = Worker::where('id', $id)->value('name');
+        return view('worker.index', compact(['workers', 'workerName']));
     }
 
     /**
@@ -25,9 +36,31 @@ class BricksDoneController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(BrickDoneRequest $request)
     {
-        //
+        try {
+            DB::beginTransaction();
+            $create = BricksDone::create([
+                'total_bricks' => $request->bricks_done,
+                'rate' => $request->rate,
+                'round_number' => $request->round_number,
+                'season' => $request->season,
+                'worker_id' => $request->user_id,
+            ]);
+
+            if ($create && Worker::where('id', $request->user_id)->decrement('peshgi', $request->bricks_done * $request->rate)) {
+                DB::commit();
+                return response()->json(['message' => 'Bricks done record added successfully!', 'status' => 200], 200);
+            } else {
+                DB::rollBack();
+                return response()->json(['message' => 'Failed to add new record!', 'status' => 309], 309);
+            }
+        } catch (QueryException $exception) {
+            DB::rollBack();
+            if (isset($exception->errorInfo[2]))
+                return response()->json(['message' => $exception->errorInfo[2], 'status' => 422], 200);
+            return response()->json(['message' => $exception->getMessage(), 'status' => 422], 200);
+        }
     }
 
     /**
