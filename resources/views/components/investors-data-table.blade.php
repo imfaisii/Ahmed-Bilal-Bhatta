@@ -12,10 +12,11 @@
                     <thead>
                         <tr>
                             <th width="10%"></th>
-                            <th width="20%">Name</th>
+                            <th width="15%">Name</th>
                             <th width="15%">CNIC</th>
                             <th width="15%">Phone</th>
-                            <th width="20%">Address</th>
+                            <th width="15%">Address</th>
+                            <th width="10%">Invested Amount</th>
                             <th width="15%">Action</th>
                         </tr>
                     </thead>
@@ -34,8 +35,23 @@
                         <td>{{ $investor->phone }}</td>
                         <td>{{ $investor->address }}</td>
                         <td>
+                            @php
+                                $total = 0;
+                            @endphp
+
+                            @foreach ($investor->investments as $investment2)
+
+                                @php
+                                    $total += $investment2->amount;
+                                @endphp
+
+                            @endforeach
+                            {{ $total }}
+                        </td>
+                        <td>
                             <div class="d-flex">
-                                <button class="btn btn-primary shadow btn-xs sharp mr-1" onclick="openEditModal('{{ route('investor.edit') }}','{{ $investor->id }}')"><i
+                                <button class="btn btn-primary shadow btn-xs sharp mr-1"
+                                    onclick="openEditModal('{{ route('investor.edit') }}','{{ $investor->id }}')"><i
                                         class="fa fa-pencil"></i></button>
                                 <button class="btn btn-danger shadow btn-xs sharp"
                                     onclick="deleteById({{ $investor->id }},'{{ route('investor.destroy') }}','example','Investor')"><i

@@ -1,9 +1,9 @@
 @push('extended_css')
     <!-- Toastr -->
-    <link rel="stylesheet" href="{{ asset('vendor/toastr/css/toastr.min.css') }}">
 @endpush
 
 @push('extended_scripts')
     <!-- Toastr -->
-    <script src="{{ asset('vendor/toastr/js/toastr.min.js') }}"></script>
+    <script src="{{asset('assets/js/notify/bootstrap-notify.min.js')}}"></script>
+    <script src="{{asset('assets/js/notify/notify-script.js')}}"></script>
 @endpush

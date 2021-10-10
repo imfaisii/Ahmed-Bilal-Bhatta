@@ -7,9 +7,7 @@
 
 @section('content')
 
-    @if (Route::is('investor.index'))
-        <x-add-new-investor />
-    @endif
+    <x-add-new-investor />
 
 @endsection
 
