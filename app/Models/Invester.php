@@ -6,14 +6,12 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Investor extends Model
+class Invester extends Model
 {
     use HasFactory,SoftDeletes;
-    protected $fillable = [
+    protected $fillabla =[
         'name',
         'address',
-        'cnic',
-        'phone',
-        'profile_photo',
+        'phoneNo',
     ];
 }
