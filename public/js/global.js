@@ -26,14 +26,11 @@ function populate(data, model) {
         $("[name=wphone]").val(data.phoneNo);
         $("[name=wpeshgi]").val(data.peshgi);
         $("[name=wcnic]").val(data.cnic);
-    } else if (model == "Investor") {
+    }
+    else if(model=='Investor'){
         $("[name=name]").val(data.name);
         $("[name=address]").val(data.address);
         $("[name=phone]").val(data.phone);
         $("[name=cnic]").val(data.cnic);
-    } else if (model == "Investment") {
-        $("[name=investor_id]").val(data.investor.id);
-        $("[name=user_id]").val(data.receiver.name);
-        $("[name=amount]").val(data.amount);
     }
 }
