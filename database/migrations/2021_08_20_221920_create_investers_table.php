@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateInvestmentMoneyTable extends Migration
+class CreateInvestersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CreateInvestmentMoneyTable extends Migration
      */
     public function up()
     {
-        Schema::create('investment_money', function (Blueprint $table) {
+        Schema::create('investers', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('amount');
-            $table->foreignId('user_id')->constrained();
-            $table->foreignId('investor_id')->constrained();
+            $table->string('name');
+            $table->string('address')->nullable();
+            $table->bigInteger('phoneNo')->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }
@@ -29,6 +30,6 @@ class CreateInvestmentMoneyTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('investment_money');
+        Schema::dropIfExists('investers');
     }
 }

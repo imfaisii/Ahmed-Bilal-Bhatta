@@ -13,29 +13,14 @@
     @stack('extended_css')
 
     {{-- Globally required --}}
-    <!-- Google font-->
-    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&amp;display=swap"
+    <link href="{{ asset('vendor/bootstrap-select/dist/css/bootstrap-select.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/font-awesome.css') }}">
-    <!-- ico-font-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/vendors/icofont.css') }}">
-    <!-- Themify icon-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/vendors/themify.css') }}">
-    <!-- Flag icon-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/vendors/flag-icon.css') }}">
-    <!-- Feather icon-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/vendors/feather-icon.css') }}">
-
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/vendors/scrollbar.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/vendors/animate.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/vendors/bootstrap.css') }}">
-    <!-- App css-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
-    <link id="color" rel="stylesheet" href="{{ asset('assets/css/color-1.css') }}" media="screen">
-    <!-- Responsive css-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/responsive.css') }}">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
 
 </head>
@@ -164,7 +149,7 @@
                             <li><a href="{{ route('investor.index') }}">Investors Details</a></li>
                         </ul>
                         <ul aria-expanded="false">
-                            <li><a href="{{ route('investment.index') }}">Add Investor Money</a></li>
+                            <li><a href="index.html">Add Investor Money</a></li>
                         </ul>
                     </li>
                     <li><a href="#" class="ai-icon" aria-expanded="false">
@@ -198,16 +183,14 @@
 
     {{-- Scripts --}}
     <!-- Required vendors -->
-    <script src="{{ asset('assets/js/jquery-3.5.1.min.js') }}"></script>
-    <script src="{{ asset('assets/js/bootstrap/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('assets/js/icons/feather-icon/feather.min.js') }}"></script>
-    <script src="{{ asset('assets/js/icons/feather-icon/feather-icon.js') }}"></script>
-    <script src="{{ asset('assets/js/scrollbar/simplebar.js') }}"></script>
-    <script src="{{ asset('assets/js/scrollbar/custom.js') }}"></script>
-    <script src="{{ asset('assets/js/config.js') }}"></script>
-    <script src="{{ asset('assets/js/sidebar-menu.js') }}"></script>
-    <script src="{{ asset('assets/js/script.js') }}"></script>
-    <script src="{{ asset('assets/js/theme-customizer/customizer.js') }}"></script>
+    <script src="{{ asset('vendor/global/global.min.js') }}"></script>
+    <script src="{{ asset('js/dashboard/main.js') }}"></script>
+    <script src="{{ asset('js/custom.min.js') }}"></script>
+    <script src="{{ asset('js/deznav-init.js') }}"></script>
+    <script src="{{ asset('js/ajaxCall.js') }}"></script>
+    <script src="{{ asset('vendor/bootstrap-select/dist/js/bootstrap-select.min.js') }}"></script>
+    <script src="{{ asset('js/global.js') }}"></script>
+
     @stack('extended_scripts')
     @yield('extended_scripts_blade')
 

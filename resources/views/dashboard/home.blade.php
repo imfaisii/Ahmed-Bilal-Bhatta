@@ -18,7 +18,7 @@
                         <div class="card-body">
                             <div class="media align-items-center">
                                 <div class="media-body mr-3">
-                                    <h2 class="fs-34 text-black font-w600">{{ $workers }}</h2>
+                                    <h2 class="fs-34 text-black font-w600">76</h2>
                                     <span>Workers</span>
                                 </div>
                                 <i class="fas fa-user-hard-hat fa-3x"></i>
@@ -37,7 +37,7 @@
                         <div class="card-body">
                             <div class="media align-items-center">
                                 <div class="media-body mr-3">
-                                    <h2 class="fs-34 text-black font-w600">{{ $investors }}</h2>
+                                    <h2 class="fs-34 text-black font-w600">124,551</h2>
                                     <span>Total Investors</span>
                                 </div>
                                 <i class="fas fa-users fa-3x"></i>
@@ -45,8 +45,8 @@
                         </div>
                         <div class="progress  rounded-0" style="height:4px;">
                             <div class="progress-bar rounded-0 bg-secondary progress-animated"
-                                style="width: 100%; height:4px;" role="progressbar">
-                                <span class="sr-only">100% Complete</span>
+                                style="width: 90%; height:4px;" role="progressbar">
+                                <span class="sr-only">90% Complete</span>
                             </div>
                         </div>
                     </div>
@@ -56,7 +56,7 @@
                         <div class="card-body">
                             <div class="media align-items-center">
                                 <div class="media-body mr-3">
-                                    <h2 class="fs-34 text-black font-w600">{{ $investments }}</h2>
+                                    <h2 class="fs-34 text-black font-w600">442</h2>
                                     <span>Total Investment</span>
                                 </div>
                                 <i class="fas fa-sack-dollar fa-3x"></i>
@@ -64,8 +64,8 @@
                         </div>
                         <div class="progress  rounded-0" style="height:4px;">
                             <div class="progress-bar rounded-0 bg-secondary progress-animated"
-                                style="width: 100%; height:4px;" role="progressbar">
-                                <span class="sr-only">100% Complete</span>
+                                style="width: 30%; height:4px;" role="progressbar">
+                                <span class="sr-only">30% Complete</span>
                             </div>
                         </div>
                     </div>
@@ -136,9 +136,8 @@
                                                 <div class="col-xl-6 col-xxl-12 col-md-6">
                                                     <div class="d-flex mb-4 align-items-center">
                                                         <span class="mr-auto pr-3 font-w500 fs-30 text-black">
-                                                            <svg class="mr-3" width="8" height="30"
-                                                                viewBox="0 0 8 30" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
+                                                            <svg class="mr-3" width="8" height="30" viewBox="0 0 8 30"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                 <rect width="7.65957" height="30" fill="#BDA25C" />
                                                             </svg>
                                                             64%
@@ -147,9 +146,8 @@
                                                     </div>
                                                     <div class="d-flex  mb-4 align-items-center">
                                                         <span class="mr-auto pr-3 font-w500 fs-30 text-black">
-                                                            <svg class="mr-3" width="8" height="30"
-                                                                viewBox="0 0 8 30" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
+                                                            <svg class="mr-3" width="8" height="30" viewBox="0 0 8 30"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                 <rect width="7.65957" height="30" fill="#209F84" />
                                                             </svg>
                                                             73%
@@ -158,9 +156,8 @@
                                                     </div>
                                                     <div class="d-flex align-items-center">
                                                         <span class="mr-auto pr-3 font-w500 fs-30 text-black">
-                                                            <svg class="mr-3" width="8" height="30"
-                                                                viewBox="0 0 8 30" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
+                                                            <svg class="mr-3" width="8" height="30" viewBox="0 0 8 30"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                 <rect width="7.65957" height="30" fill="#323232" />
                                                             </svg>
                                                             48%
@@ -191,9 +188,8 @@
                                                 <div class="col-xl-6 col-xxl-12 col-md-6">
                                                     <div class="d-flex mb-4 align-items-center">
                                                         <span class="mr-auto pr-3 font-w500 fs-30 text-black">
-                                                            <svg class="mr-3" width="8" height="30"
-                                                                viewBox="0 0 8 30" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
+                                                            <svg class="mr-3" width="8" height="30" viewBox="0 0 8 30"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                 <rect width="7.65957" height="30" fill="#BDA25C" />
                                                             </svg>
                                                             40%
@@ -202,9 +198,8 @@
                                                     </div>
                                                     <div class="d-flex  mb-4 align-items-center">
                                                         <span class="mr-auto pr-3 font-w500 fs-30 text-black">
-                                                            <svg class="mr-3" width="8" height="30"
-                                                                viewBox="0 0 8 30" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
+                                                            <svg class="mr-3" width="8" height="30" viewBox="0 0 8 30"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                 <rect width="7.65957" height="30" fill="#209F84" />
                                                             </svg>
                                                             81%
@@ -213,9 +208,8 @@
                                                     </div>
                                                     <div class="d-flex align-items-center">
                                                         <span class="mr-auto pr-3 font-w500 fs-30 text-black">
-                                                            <svg class="mr-3" width="8" height="30"
-                                                                viewBox="0 0 8 30" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
+                                                            <svg class="mr-3" width="8" height="30" viewBox="0 0 8 30"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                 <rect width="7.65957" height="30" fill="#323232" />
                                                             </svg>
                                                             50%
@@ -246,9 +240,8 @@
                                                 <div class="col-xl-6 col-xxl-12 col-md-6">
                                                     <div class="d-flex mb-4 align-items-center">
                                                         <span class="mr-auto pr-3 font-w500 fs-30 text-black">
-                                                            <svg class="mr-3" width="8" height="30"
-                                                                viewBox="0 0 8 30" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
+                                                            <svg class="mr-3" width="8" height="30" viewBox="0 0 8 30"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                 <rect width="7.65957" height="30" fill="#BDA25C" />
                                                             </svg>
                                                             90%
@@ -257,9 +250,8 @@
                                                     </div>
                                                     <div class="d-flex  mb-4 align-items-center">
                                                         <span class="mr-auto pr-3 font-w500 fs-30 text-black">
-                                                            <svg class="mr-3" width="8" height="30"
-                                                                viewBox="0 0 8 30" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
+                                                            <svg class="mr-3" width="8" height="30" viewBox="0 0 8 30"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                 <rect width="7.65957" height="30" fill="#209F84" />
                                                             </svg>
                                                             75%
@@ -268,9 +260,8 @@
                                                     </div>
                                                     <div class="d-flex align-items-center">
                                                         <span class="mr-auto pr-3 font-w500 fs-30 text-black">
-                                                            <svg class="mr-3" width="8" height="30"
-                                                                viewBox="0 0 8 30" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
+                                                            <svg class="mr-3" width="8" height="30" viewBox="0 0 8 30"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                 <rect width="7.65957" height="30" fill="#323232" />
                                                             </svg>
                                                             30%
@@ -378,15 +369,12 @@
                                                                     <table class="table-condensed">
                                                                         <thead>
                                                                             <tr>
-                                                                                <th class="prev"
-                                                                                    data-action="previous"><i
-                                                                                        class="fa fa-chevron-left"></i>
-                                                                                </th>
+                                                                                <th class="prev" data-action="previous"><i
+                                                                                        class="fa fa-chevron-left"></i></th>
                                                                                 <th class="picker-switch"
                                                                                     data-action="pickerSwitch" colspan="5"
                                                                                     title="Select Month">August 2021</th>
-                                                                                <th class="next"
-                                                                                    data-action="next"><i
+                                                                                <th class="next" data-action="next"><i
                                                                                         class="fa fa-chevron-right"></i>
                                                                                 </th>
                                                                             </tr>
@@ -406,20 +394,15 @@
                                                                                     data-day="08/01/2021"
                                                                                     class="day weekend">1</td>
                                                                                 <td data-action="selectDay"
-                                                                                    data-day="08/02/2021"
-                                                                                    class="day">2</td>
+                                                                                    data-day="08/02/2021" class="day">2</td>
                                                                                 <td data-action="selectDay"
-                                                                                    data-day="08/03/2021"
-                                                                                    class="day">3</td>
+                                                                                    data-day="08/03/2021" class="day">3</td>
                                                                                 <td data-action="selectDay"
-                                                                                    data-day="08/04/2021"
-                                                                                    class="day">4</td>
+                                                                                    data-day="08/04/2021" class="day">4</td>
                                                                                 <td data-action="selectDay"
-                                                                                    data-day="08/05/2021"
-                                                                                    class="day">5</td>
+                                                                                    data-day="08/05/2021" class="day">5</td>
                                                                                 <td data-action="selectDay"
-                                                                                    data-day="08/06/2021"
-                                                                                    class="day">6</td>
+                                                                                    data-day="08/06/2021" class="day">6</td>
                                                                                 <td data-action="selectDay"
                                                                                     data-day="08/07/2021"
                                                                                     class="day weekend">7</td>
@@ -429,23 +412,18 @@
                                                                                     data-day="08/08/2021"
                                                                                     class="day weekend">8</td>
                                                                                 <td data-action="selectDay"
-                                                                                    data-day="08/09/2021"
-                                                                                    class="day">9</td>
+                                                                                    data-day="08/09/2021" class="day">9</td>
                                                                                 <td data-action="selectDay"
-                                                                                    data-day="08/10/2021"
-                                                                                    class="day">10
+                                                                                    data-day="08/10/2021" class="day">10
                                                                                 </td>
                                                                                 <td data-action="selectDay"
-                                                                                    data-day="08/11/2021"
-                                                                                    class="day">11
+                                                                                    data-day="08/11/2021" class="day">11
                                                                                 </td>
                                                                                 <td data-action="selectDay"
-                                                                                    data-day="08/12/2021"
-                                                                                    class="day">12
+                                                                                    data-day="08/12/2021" class="day">12
                                                                                 </td>
                                                                                 <td data-action="selectDay"
-                                                                                    data-day="08/13/2021"
-                                                                                    class="day">13
+                                                                                    data-day="08/13/2021" class="day">13
                                                                                 </td>
                                                                                 <td data-action="selectDay"
                                                                                     data-day="08/14/2021"
@@ -456,24 +434,19 @@
                                                                                     data-day="08/15/2021"
                                                                                     class="day weekend">15</td>
                                                                                 <td data-action="selectDay"
-                                                                                    data-day="08/16/2021"
-                                                                                    class="day">16
+                                                                                    data-day="08/16/2021" class="day">16
                                                                                 </td>
                                                                                 <td data-action="selectDay"
-                                                                                    data-day="08/17/2021"
-                                                                                    class="day">17
+                                                                                    data-day="08/17/2021" class="day">17
                                                                                 </td>
                                                                                 <td data-action="selectDay"
-                                                                                    data-day="08/18/2021"
-                                                                                    class="day">18
+                                                                                    data-day="08/18/2021" class="day">18
                                                                                 </td>
                                                                                 <td data-action="selectDay"
-                                                                                    data-day="08/19/2021"
-                                                                                    class="day">19
+                                                                                    data-day="08/19/2021" class="day">19
                                                                                 </td>
                                                                                 <td data-action="selectDay"
-                                                                                    data-day="08/20/2021"
-                                                                                    class="day">20
+                                                                                    data-day="08/20/2021" class="day">20
                                                                                 </td>
                                                                                 <td data-action="selectDay"
                                                                                     data-day="08/21/2021"
@@ -487,20 +460,16 @@
                                                                                     data-day="08/23/2021"
                                                                                     class="day active today">23</td>
                                                                                 <td data-action="selectDay"
-                                                                                    data-day="08/24/2021"
-                                                                                    class="day">24
+                                                                                    data-day="08/24/2021" class="day">24
                                                                                 </td>
                                                                                 <td data-action="selectDay"
-                                                                                    data-day="08/25/2021"
-                                                                                    class="day">25
+                                                                                    data-day="08/25/2021" class="day">25
                                                                                 </td>
                                                                                 <td data-action="selectDay"
-                                                                                    data-day="08/26/2021"
-                                                                                    class="day">26
+                                                                                    data-day="08/26/2021" class="day">26
                                                                                 </td>
                                                                                 <td data-action="selectDay"
-                                                                                    data-day="08/27/2021"
-                                                                                    class="day">27
+                                                                                    data-day="08/27/2021" class="day">27
                                                                                 </td>
                                                                                 <td data-action="selectDay"
                                                                                     data-day="08/28/2021"
@@ -511,24 +480,19 @@
                                                                                     data-day="08/29/2021"
                                                                                     class="day weekend">29</td>
                                                                                 <td data-action="selectDay"
-                                                                                    data-day="08/30/2021"
-                                                                                    class="day">30
+                                                                                    data-day="08/30/2021" class="day">30
                                                                                 </td>
                                                                                 <td data-action="selectDay"
-                                                                                    data-day="08/31/2021"
-                                                                                    class="day">31
+                                                                                    data-day="08/31/2021" class="day">31
                                                                                 </td>
                                                                                 <td data-action="selectDay"
-                                                                                    data-day="09/01/2021"
-                                                                                    class="day new">1
+                                                                                    data-day="09/01/2021" class="day new">1
                                                                                 </td>
                                                                                 <td data-action="selectDay"
-                                                                                    data-day="09/02/2021"
-                                                                                    class="day new">2
+                                                                                    data-day="09/02/2021" class="day new">2
                                                                                 </td>
                                                                                 <td data-action="selectDay"
-                                                                                    data-day="09/03/2021"
-                                                                                    class="day new">3
+                                                                                    data-day="09/03/2021" class="day new">3
                                                                                 </td>
                                                                                 <td data-action="selectDay"
                                                                                     data-day="09/04/2021"
@@ -539,24 +503,19 @@
                                                                                     data-day="09/05/2021"
                                                                                     class="day new weekend">5</td>
                                                                                 <td data-action="selectDay"
-                                                                                    data-day="09/06/2021"
-                                                                                    class="day new">6
+                                                                                    data-day="09/06/2021" class="day new">6
                                                                                 </td>
                                                                                 <td data-action="selectDay"
-                                                                                    data-day="09/07/2021"
-                                                                                    class="day new">7
+                                                                                    data-day="09/07/2021" class="day new">7
                                                                                 </td>
                                                                                 <td data-action="selectDay"
-                                                                                    data-day="09/08/2021"
-                                                                                    class="day new">8
+                                                                                    data-day="09/08/2021" class="day new">8
                                                                                 </td>
                                                                                 <td data-action="selectDay"
-                                                                                    data-day="09/09/2021"
-                                                                                    class="day new">9
+                                                                                    data-day="09/09/2021" class="day new">9
                                                                                 </td>
                                                                                 <td data-action="selectDay"
-                                                                                    data-day="09/10/2021"
-                                                                                    class="day new">10
+                                                                                    data-day="09/10/2021" class="day new">10
                                                                                 </td>
                                                                                 <td data-action="selectDay"
                                                                                     data-day="09/11/2021"
@@ -569,15 +528,12 @@
                                                                     <table class="table-condensed">
                                                                         <thead>
                                                                             <tr>
-                                                                                <th class="prev"
-                                                                                    data-action="previous"><i
-                                                                                        class="fa fa-chevron-left"></i>
-                                                                                </th>
+                                                                                <th class="prev" data-action="previous"><i
+                                                                                        class="fa fa-chevron-left"></i></th>
                                                                                 <th class="picker-switch"
                                                                                     data-action="pickerSwitch" colspan="5"
                                                                                     title="Select Year">2021</th>
-                                                                                <th class="next"
-                                                                                    data-action="next"><i
+                                                                                <th class="next" data-action="next"><i
                                                                                         class="fa fa-chevron-right"></i>
                                                                                 </th>
                                                                             </tr>
@@ -608,8 +564,7 @@
                                                                                         data-action="selectMonth"
                                                                                         class="month">Nov</span><span
                                                                                         data-action="selectMonth"
-                                                                                        class="month">Dec</span>
-                                                                                </td>
+                                                                                        class="month">Dec</span></td>
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
@@ -618,15 +573,12 @@
                                                                     <table class="table-condensed">
                                                                         <thead>
                                                                             <tr>
-                                                                                <th class="prev"
-                                                                                    data-action="previous"><i
-                                                                                        class="fa fa-chevron-left"></i>
-                                                                                </th>
+                                                                                <th class="prev" data-action="previous"><i
+                                                                                        class="fa fa-chevron-left"></i></th>
                                                                                 <th class="picker-switch"
                                                                                     data-action="pickerSwitch" colspan="5"
                                                                                     title="Select Decade">2016-2027</th>
-                                                                                <th class="next"
-                                                                                    data-action="next"><i
+                                                                                <th class="next" data-action="next"><i
                                                                                         class="fa fa-chevron-right"></i>
                                                                                 </th>
                                                                             </tr>
@@ -657,8 +609,7 @@
                                                                                         data-action="selectYear"
                                                                                         class="year">2026</span><span
                                                                                         data-action="selectYear"
-                                                                                        class="year">2027</span>
-                                                                                </td>
+                                                                                        class="year">2027</span></td>
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
@@ -667,15 +618,12 @@
                                                                     <table class="table-condensed">
                                                                         <thead>
                                                                             <tr>
-                                                                                <th class="prev"
-                                                                                    data-action="previous"><i
-                                                                                        class="fa fa-chevron-left"></i>
-                                                                                </th>
+                                                                                <th class="prev" data-action="previous"><i
+                                                                                        class="fa fa-chevron-left"></i></th>
                                                                                 <th class="picker-switch"
                                                                                     data-action="pickerSwitch" colspan="5">
                                                                                     2000-2107</th>
-                                                                                <th class="next"
-                                                                                    data-action="next"><i
+                                                                                <th class="next" data-action="next"><i
                                                                                         class="fa fa-chevron-right"></i>
                                                                                 </th>
                                                                             </tr>
@@ -743,15 +691,13 @@
                                                                     <table class="table-condensed">
                                                                         <tr>
                                                                             <td><a href="#" tabindex="-1"
-                                                                                    title="Increment Hour"
-                                                                                    class="btn"
+                                                                                    title="Increment Hour" class="btn"
                                                                                     data-action="incrementHours"><i
                                                                                         class="fa fa-chevron-up"></i></a>
                                                                             </td>
                                                                             <td class="separator"></td>
                                                                             <td><a href="#" tabindex="-1"
-                                                                                    title="Increment Minute"
-                                                                                    class="btn"
+                                                                                    title="Increment Minute" class="btn"
                                                                                     data-action="incrementMinutes"><i
                                                                                         class="fa fa-chevron-up"></i></a>
                                                                             </td>
@@ -773,15 +719,13 @@
                                                                         </tr>
                                                                         <tr>
                                                                             <td><a href="#" tabindex="-1"
-                                                                                    title="Decrement Hour"
-                                                                                    class="btn"
+                                                                                    title="Decrement Hour" class="btn"
                                                                                     data-action="decrementHours"><i
                                                                                         class="fa fa-chevron-down"></i></a>
                                                                             </td>
                                                                             <td class="separator"></td>
                                                                             <td><a href="#" tabindex="-1"
-                                                                                    title="Decrement Minute"
-                                                                                    class="btn"
+                                                                                    title="Decrement Minute" class="btn"
                                                                                     data-action="decrementMinutes"><i
                                                                                         class="fa fa-chevron-down"></i></a>
                                                                             </td>
@@ -792,45 +736,33 @@
                                                                 <div class="timepicker-hours" style="display: none;">
                                                                     <table class="table-condensed">
                                                                         <tr>
-                                                                            <td data-action="selectHour"
-                                                                                class="hour">12
+                                                                            <td data-action="selectHour" class="hour">12
                                                                             </td>
-                                                                            <td data-action="selectHour"
-                                                                                class="hour">01
+                                                                            <td data-action="selectHour" class="hour">01
                                                                             </td>
-                                                                            <td data-action="selectHour"
-                                                                                class="hour">02
+                                                                            <td data-action="selectHour" class="hour">02
                                                                             </td>
-                                                                            <td data-action="selectHour"
-                                                                                class="hour">03
+                                                                            <td data-action="selectHour" class="hour">03
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
-                                                                            <td data-action="selectHour"
-                                                                                class="hour">04
+                                                                            <td data-action="selectHour" class="hour">04
                                                                             </td>
-                                                                            <td data-action="selectHour"
-                                                                                class="hour">05
+                                                                            <td data-action="selectHour" class="hour">05
                                                                             </td>
-                                                                            <td data-action="selectHour"
-                                                                                class="hour">06
+                                                                            <td data-action="selectHour" class="hour">06
                                                                             </td>
-                                                                            <td data-action="selectHour"
-                                                                                class="hour">07
+                                                                            <td data-action="selectHour" class="hour">07
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
-                                                                            <td data-action="selectHour"
-                                                                                class="hour">08
+                                                                            <td data-action="selectHour" class="hour">08
                                                                             </td>
-                                                                            <td data-action="selectHour"
-                                                                                class="hour">09
+                                                                            <td data-action="selectHour" class="hour">09
                                                                             </td>
-                                                                            <td data-action="selectHour"
-                                                                                class="hour">10
+                                                                            <td data-action="selectHour" class="hour">10
                                                                             </td>
-                                                                            <td data-action="selectHour"
-                                                                                class="hour">11
+                                                                            <td data-action="selectHour" class="hour">11
                                                                             </td>
                                                                         </tr>
                                                                     </table>
@@ -838,45 +770,33 @@
                                                                 <div class="timepicker-minutes" style="display: none;">
                                                                     <table class="table-condensed">
                                                                         <tr>
-                                                                            <td data-action="selectMinute"
-                                                                                class="minute">00
+                                                                            <td data-action="selectMinute" class="minute">00
                                                                             </td>
-                                                                            <td data-action="selectMinute"
-                                                                                class="minute">05
+                                                                            <td data-action="selectMinute" class="minute">05
                                                                             </td>
-                                                                            <td data-action="selectMinute"
-                                                                                class="minute">10
+                                                                            <td data-action="selectMinute" class="minute">10
                                                                             </td>
-                                                                            <td data-action="selectMinute"
-                                                                                class="minute">15
+                                                                            <td data-action="selectMinute" class="minute">15
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
-                                                                            <td data-action="selectMinute"
-                                                                                class="minute">20
+                                                                            <td data-action="selectMinute" class="minute">20
                                                                             </td>
-                                                                            <td data-action="selectMinute"
-                                                                                class="minute">25
+                                                                            <td data-action="selectMinute" class="minute">25
                                                                             </td>
-                                                                            <td data-action="selectMinute"
-                                                                                class="minute">30
+                                                                            <td data-action="selectMinute" class="minute">30
                                                                             </td>
-                                                                            <td data-action="selectMinute"
-                                                                                class="minute">35
+                                                                            <td data-action="selectMinute" class="minute">35
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
-                                                                            <td data-action="selectMinute"
-                                                                                class="minute">40
+                                                                            <td data-action="selectMinute" class="minute">40
                                                                             </td>
-                                                                            <td data-action="selectMinute"
-                                                                                class="minute">45
+                                                                            <td data-action="selectMinute" class="minute">45
                                                                             </td>
-                                                                            <td data-action="selectMinute"
-                                                                                class="minute">50
+                                                                            <td data-action="selectMinute" class="minute">50
                                                                             </td>
-                                                                            <td data-action="selectMinute"
-                                                                                class="minute">55
+                                                                            <td data-action="selectMinute" class="minute">55
                                                                             </td>
                                                                         </tr>
                                                                     </table>
