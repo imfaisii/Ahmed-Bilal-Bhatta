@@ -1,9 +1,11 @@
 <?php
 
 use App\Http\Controllers\BricksDoneController;
+use App\Http\Controllers\InvestmentMoneyController;
 use App\Http\Controllers\InvestorController;
 use App\Http\Controllers\WorkerBorrowNreturnController;
 use App\Http\Controllers\WorkerController;
+use App\Models\InvestmentMoney;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -61,5 +63,20 @@ Route::group(
         Route::post('destroy', [InvestorController::class, 'destroy'])->name('destroy');
         Route::post('edit', [InvestorController::class, 'edit'])->name('edit');
         Route::post('update', [InvestorController::class, 'update'])->name('update');
+    }
+);
+
+Route::group(
+    [
+        'middleware' => 'auth',
+        'prefix' => 'front/investments',
+        'as' => 'investment.'
+    ],
+    function () {
+        Route::get('index', [InvestmentMoneyController::class, 'index'])->name('index');
+        Route::post('store', [InvestmentMoneyController::class, 'store'])->name('store');
+        Route::post('destroy', [InvestmentMoneyController::class, 'destroy'])->name('destroy');
+        Route::post('edit', [InvestmentMoneyController::class, 'edit'])->name('edit');
+        Route::post('update', [InvestmentMoneyController::class, 'update'])->name('update');
     }
 );
