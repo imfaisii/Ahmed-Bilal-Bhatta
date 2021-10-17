@@ -2,10 +2,10 @@
 
 namespace App\View\Components;
 
-use App\Models\Investor;
+use App\Models\InvestmentMoney;
 use Illuminate\View\Component;
 
-class InvestorsDataTable extends Component
+class InvestmentMoneyTable extends Component
 {
     /**
      * Create a new component instance.
@@ -24,7 +24,6 @@ class InvestorsDataTable extends Component
      */
     public function render()
     {
-        $investors = Investor::with(['investments'])->get();
-        return view('components.investors-data-table', compact('investors'));
+        return view('components.investment-money-table')->with('investments', InvestmentMoney::with('receiver', 'investor')->get());
     }
 }

@@ -2,11 +2,11 @@
 
 namespace App\Policies;
 
-use App\Models\Investor;
+use App\Models\InvestmentMoney;
 use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
-class InvestorPolicy
+class InvestmentMoneyPolicy
 {
     use HandlesAuthorization;
 
@@ -25,10 +25,10 @@ class InvestorPolicy
      * Determine whether the user can view the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Investor  $investor
+     * @param  \App\Models\InvestmentMoney  $investmentMoney
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user, Investor $investor)
+    public function view(User $user, InvestmentMoney $investmentMoney)
     {
         //
     }
@@ -48,10 +48,10 @@ class InvestorPolicy
      * Determine whether the user can update the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Investor  $investor
+     * @param  \App\Models\InvestmentMoney  $investmentMoney
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function update(User $user, Investor $investor)
+    public function update(User $user, InvestmentMoney $investmentMoney)
     {
         //
     }
@@ -60,10 +60,10 @@ class InvestorPolicy
      * Determine whether the user can delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Investor  $investor
+     * @param  \App\Models\InvestmentMoney  $investmentMoney
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $user, Investor $investor)
+    public function delete(User $user, InvestmentMoney $investmentMoney)
     {
         //
     }
@@ -72,10 +72,10 @@ class InvestorPolicy
      * Determine whether the user can restore the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Investor  $investor
+     * @param  \App\Models\InvestmentMoney  $investmentMoney
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function restore(User $user, Investor $investor)
+    public function restore(User $user, InvestmentMoney $investmentMoney)
     {
         //
     }
@@ -84,10 +84,10 @@ class InvestorPolicy
      * Determine whether the user can permanently delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Investor  $investor
+     * @param  \App\Models\InvestmentMoney  $investmentMoney
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function forceDelete(User $user, Investor $investor)
+    public function forceDelete(User $user, InvestmentMoney $investmentMoney)
     {
         //
     }
