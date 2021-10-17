@@ -1,10 +1,10 @@
 @push('extended_css')
     <!-- Datatable -->
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/vendors/datatables.css')}}">
+    <link href="{{ asset('vendor/datatables/css/jquery.dataTables.min.css') }}" rel="stylesheet">
 @endpush
 
 @push('extended_scripts')
     <!-- Datatable -->
-    <script src="{{asset('assets/js/datatable/datatables/jquery.dataTables.min.js')}}"></script>
-    <script src="{{asset('assets/js/datatable/datatables/datatable.custom.js')}}"></script>
+    <script src="{{ asset('vendor/datatables/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('js/plugins-init/datatables.init.js') }}"></script>
 @endpush

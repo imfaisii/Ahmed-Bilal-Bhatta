@@ -24,7 +24,7 @@ class InvestorsDataTable extends Component
      */
     public function render()
     {
-        $investors = Investor::with(['investments'])->get();
+        $investors = Investor::all();
         return view('components.investors-data-table', compact('investors'));
     }
 }

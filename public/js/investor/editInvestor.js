@@ -24,7 +24,7 @@ $(".editInvestor").click(function (e) {
 function openEditModal(url, id) {
     var formData = new FormData();
     formData.append("id", id);
-    $(".modal-title").html("Edit Investor");
+    $(".modal-title").html("Edit Worker");
     $(".editInvestor").show();
     $(".addInvestor").hide();
     $("[name=hidden_id]").val(id);
