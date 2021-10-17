@@ -5,7 +5,7 @@ namespace App\View\Components;
 use App\Models\Investor;
 use Illuminate\View\Component;
 
-class InvestorsDataTable extends Component
+class ModalNewInvestment extends Component
 {
     /**
      * Create a new component instance.
@@ -24,7 +24,6 @@ class InvestorsDataTable extends Component
      */
     public function render()
     {
-        $investors = Investor::with(['investments'])->get();
-        return view('components.investors-data-table', compact('investors'));
+        return view('components.modal-new-investment')->with('investors', Investor::all());
     }
 }

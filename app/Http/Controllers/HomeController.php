@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\InvestmentMoney;
+use App\Models\Investor;
+use App\Models\Worker;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +26,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('dashboard.home');
+        $workers = Worker::all()->count();
+        $investors = Investor::all()->count();
+        $investments = InvestmentMoney::all()->sum('amount');
+        return view('dashboard.home', compact('workers', 'investors', 'investments'));
     }
 }
