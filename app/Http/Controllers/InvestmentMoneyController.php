@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\InvestmentStoreRequest;
 use App\Http\Requests\NewInvestmentRequest;
 use App\Models\InvestmentMoney;
 use Exception;
@@ -37,7 +38,7 @@ class InvestmentMoneyController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(NewInvestmentRequest $request)
+    public function store(InvestmentStoreRequest $request)
     {
         try {
             DB::beginTransaction();
