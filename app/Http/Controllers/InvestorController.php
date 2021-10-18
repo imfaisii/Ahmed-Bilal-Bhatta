@@ -40,7 +40,6 @@ class InvestorController extends Controller
      */
     public function store(NewInvestorRequest $request)
     {
-        //
         try {
             DB::beginTransaction();
             if ($request->hasFile('profile_image')) {

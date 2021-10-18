@@ -10,10 +10,11 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Investor extends Model
 {
     use HasFactory, SoftDeletes;
-    protected $fillabla = [
+    protected $fillable = [
         'name',
         'address',
-        'phoneNo',
+        'phone',
+        'cnic'
     ];
 
 
