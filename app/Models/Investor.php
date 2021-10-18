@@ -9,12 +9,18 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Investor extends Model
 {
+<<<<<<< HEAD
     use HasFactory, SoftDeletes;
     protected $fillabla = [
+=======
+    use HasFactory,SoftDeletes;
+    protected $fillable = [
+>>>>>>> parent of 6255237 (Theme-Change)
         'name',
         'address',
         'phoneNo',
     ];
+<<<<<<< HEAD
 
 
     /**
@@ -26,4 +32,6 @@ class Investor extends Model
     {
         return $this->hasMany(InvestmentMoney::class);
     }
+=======
+>>>>>>> parent of 6255237 (Theme-Change)
 }

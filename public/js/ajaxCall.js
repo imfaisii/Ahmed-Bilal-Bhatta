@@ -67,16 +67,10 @@ function dynamicAjax(fileName, reqType, dataObj, tableId, callType, model) {
         error: function (response) {
             console.log("error");
             console.log(response);
-            if (response.status == 422) {
+            if (response.responseJSON.errors) {
                 $.each(response.responseJSON.errors, function (key, value) {
                     CustomToaster("error", value, "Notification");
                 });
-            } else if (response.status == 400) {
-                CustomToaster(
-                    "error",
-                    response.responseJSON.message,
-                    "Notification"
-                );
             } else {
                 CustomToaster("error", response.statusText, "Notification");
             }
