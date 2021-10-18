@@ -149,11 +149,7 @@
                             <li><a href="{{ route('investor.index') }}">Investors Details</a></li>
                         </ul>
                         <ul aria-expanded="false">
-<<<<<<< HEAD
                             <li><a href="{{ route('investment.index') }}">Add Investor Money</a></li>
-=======
-                            <li><a href="index.html">Add Investor Money</a></li>
->>>>>>> parent of 6255237 (Theme-Change)
                         </ul>
                     </li>
                     <li><a href="#" class="ai-icon" aria-expanded="false">
