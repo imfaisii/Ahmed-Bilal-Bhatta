@@ -19,9 +19,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
 
 
 </head>
@@ -42,7 +42,7 @@
     <div id="main-wrapper">
         {{-- Nav header start --}}
         <div class="nav-header">
-            <a href="index.html" class="brand-logo">
+            <a href="{{ route('home') }}" class="brand-logo">
                 <img class="logo-abbr" src="{{ asset('images/favicon.png') }}" alt="Company Logo">
             </a>
 
@@ -154,7 +154,7 @@
                         </ul>
                     </li>
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-                            <i class="fas fa-dollar-sign"></i>
+                            <i class="fas fa-funnel-dollar    "></i>
                             <span class="nav-text">Expenses</span>
                         </a>
                         <ul aria-expanded="false">

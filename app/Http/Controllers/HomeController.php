@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\BricksDone;
+use App\Models\Expense;
 use App\Models\InvestmentMoney;
 use App\Models\Investor;
 use App\Models\Worker;
@@ -29,6 +31,8 @@ class HomeController extends Controller
         $workers = Worker::all()->count();
         $investors = Investor::all()->count();
         $investments = InvestmentMoney::all()->sum('amount');
-        return view('dashboard.home', compact('workers', 'investors', 'investments'));
+        $expense = Expense::all()->sum('amount');
+        $bricks_produced = BricksDone::all()->sum('total_bricks');
+        return view('dashboard.home', compact('workers', 'investors', 'investments', 'expense', 'bricks_produced'));
     }
 }

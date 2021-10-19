@@ -24,12 +24,12 @@
                                 <i class="fas fa-user-hard-hat fa-3x"></i>
                             </div>
                         </div>
-                        {{-- <div class="progress  rounded-0" style="height:4px;">
-                                <div class="progress-bar rounded-0 bg-secondary progress-animated"
-                                    style="width: 50%; height:4px;" role="progressbar">
-                                    <span class="sr-only">50% Complete</span>
-                                </div>
-                            </div> --}}
+                        <div class="progress  rounded-0" style="height:4px;">
+                            <div class="progress-bar rounded-0 bg-secondary progress-animated"
+                                style="width: 100%; height:4px;" role="progressbar">
+                                <span class="sr-only">100% Complete</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xl-3  col-sm-6">
@@ -75,15 +75,99 @@
                         <div class="card-body">
                             <div class="media align-items-center">
                                 <div class="media-body mr-3">
-                                    <h2 class="fs-34 text-black font-w600">RS 0000</h2>
-                                    <span>Overall Earning</span>
+                                    <h2 class="fs-34 text-black font-w600">Rs. 0000</h2>
+                                    <span>Total Earning</span>
                                 </div>
                                 <i class="fad fa-usd-circle fa-3x"></i>
                             </div>
                         </div>
+                        <div class="progress  rounded-0" style="height:4px;">
+                            <div class="progress-bar rounded-0 bg-secondary progress-animated"
+                                style="width: 100%; height:4px;" role="progressbar">
+                                <span class="sr-only">100% Complete</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>[]
+
+                <div class="col-xl-3  col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media align-items-center">
+                                <div class="media-body mr-3">
+                                    <h2 class="fs-34 text-black font-w600">Rs. {{ $expense }}</h2>
+                                    <span>Total Expenditure &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( Kharcha )</span>
+                                </div>
+                                <i class="fas fa-hand-holding-usd fa-3x"></i>
+                            </div>
+                        </div>
+                        <div class="progress  rounded-0" style="height:4px;">
+                            <div class="progress-bar rounded-0 bg-secondary progress-animated"
+                                style="width: 100%; height:4px;" role="progressbar">
+                                <span class="sr-only">100% Complete</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3  col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media align-items-center">
+                                <div class="media-body mr-3">
+                                    <h2 class="fs-34 text-black font-w600">{{ $bricks_produced }}</h2>
+                                    <span>Total Bricks Produced</span>
+                                </div>
+                                <i class="fas fa-cubes fa-3x"></i>
+                            </div>
+                        </div>
+                        <div class="progress  rounded-0" style="height:4px;">
+                            <div class="progress-bar rounded-0 bg-secondary progress-animated"
+                                style="width: 100%; height:4px;" role="progressbar">
+                                <span class="sr-only">100% Complete</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3  col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media align-items-center">
+                                <div class="media-body mr-3">
+                                    <h2 class="fs-34 text-black font-w600">{{ $investments }}</h2>
+                                    <span>Total Bricks Sold</span>
+                                </div>
+                                <i class="fas fa-cube fa-3x"></i>
+                            </div>
+                        </div>
+                        <div class="progress  rounded-0" style="height:4px;">
+                            <div class="progress-bar rounded-0 bg-secondary progress-animated"
+                                style="width: 100%; height:4px;" role="progressbar">
+                                <span class="sr-only">100% Complete</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3  col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media align-items-center">
+                                <div class="media-body mr-3">
+                                    <h2 class="fs-34 text-black font-w600">{{ $investments }}</h2>
+                                    <span>Total Investment</span>
+                                </div>
+                                <i class="fas fa-sack-dollar fa-3x"></i>
+                            </div>
+                        </div>
+                        <div class="progress  rounded-0" style="height:4px;">
+                            <div class="progress-bar rounded-0 bg-secondary progress-animated"
+                                style="width: 100%; height:4px;" role="progressbar">
+                                <span class="sr-only">100% Complete</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
             <div class="row">
                 <div class="col-xl-6">
                     <div class="row">
@@ -91,7 +175,7 @@
                             <div class="card">
                                 <div class="card-header d-sm-flex d-block pb-0 border-0">
                                     <div class="mr-auto pr-3">
-                                        <h4 class="text-black fs-20 mb-0">Patient Percentage</h4>
+                                        <h4 class="text-black fs-20 mb-0">Worker Percentage</h4>
                                     </div>
                                     <div class="card-action card-tabs mt-3 mt-sm-0 mt-3 mb-sm-0 mb-3 mt-sm-0">
                                         <ul class="nav nav-tabs" role="tablist">

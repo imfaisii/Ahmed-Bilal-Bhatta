@@ -302,6 +302,15 @@ let dataSet = [
 
     //example 2
     var table2 = $("#example2").DataTable({
+        dom: "Bfrtip",
+        buttons: {
+            buttons: [
+                { extend: "copyHtml5", className: "btn btn-primary" },
+                { extend: "excelHtml5", className: "btn btn-primary" },
+                { extend: "csvHtml5", className: "btn btn-primary" },
+                { extend: "pdfHtml5", className: "btn btn-primary" },
+            ],
+        },
         createdRow: function (row, data, index) {
             $(row).addClass("selected");
         },
