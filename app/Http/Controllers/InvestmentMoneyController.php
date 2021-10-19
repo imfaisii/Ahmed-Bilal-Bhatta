@@ -45,7 +45,7 @@ class InvestmentMoneyController extends Controller
             $create = InvestmentMoney::create($request->validated());
             if ($create) {
                 DB::commit();
-                return response()->json(['message' => 'Investor added successfully!', 'status' => 200], 200);
+                return response()->json(['message' => 'Investment money added successfully!', 'status' => 200], 200);
             } else {
                 DB::rollBack();
                 return response()->json(['message' => 'Invalid Data supplied! Please try again!', 'status' => 422], 422);

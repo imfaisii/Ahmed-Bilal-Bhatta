@@ -56,7 +56,7 @@
                         <div class="card-body">
                             <div class="media align-items-center">
                                 <div class="media-body mr-3">
-                                    <h2 class="fs-34 text-black font-w600">{{ $investments }}</h2>
+                                    <h2 class="fs-34 text-black font-w600">Rs. {{ $investments }}</h2>
                                     <span>Total Investment</span>
                                 </div>
                                 <i class="fas fa-sack-dollar fa-3x"></i>
