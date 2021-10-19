@@ -9,7 +9,7 @@
     <!-- Datetime -->
     <script src="{{ asset('vendor/bootstrap-datetimepicker/js/moment.js') }}"></script>
     <script src="{{ asset('vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js') }}"></script>
-    <script src="./vendor/chart.js/Chart.bundle.min.js"></script>
+    <script src="{{ asset('vendor/chart.js/Chart.bundle.min.js') }}"></script>
     <!-- Chart piety plugin files -->
     <script src="{{ asset('vendor/peity/jquery.peity.min.js') }}"></script>
 

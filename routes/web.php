@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BricksDoneController;
+use App\Http\Controllers\ExpenseController;
 use App\Http\Controllers\InvestmentMoneyController;
 use App\Http\Controllers\InvestorController;
 use App\Http\Controllers\WorkerBorrowNreturnController;
@@ -54,7 +55,7 @@ Route::get('workers/bricksDone/view/{id}', [BricksDoneController::class, 'view']
 Route::group(
     [
         'middleware' => 'auth',
-        'prefix' => 'front/investor',
+        'prefix' => 'front/',
         'as' => 'investor.'
     ],
     function () {
@@ -78,5 +79,21 @@ Route::group(
         Route::post('destroy', [InvestmentMoneyController::class, 'destroy'])->name('destroy');
         Route::post('edit', [InvestmentMoneyController::class, 'edit'])->name('edit');
         Route::post('update', [InvestmentMoneyController::class, 'update'])->name('update');
+    }
+);
+
+Route::group(
+    [
+        'middleware' => 'auth',
+        'prefix' => 'front/expenses',
+        'as' => 'expenses.'
+    ],
+    function () {
+        Route::get('index', [ExpenseController::class, 'index'])->name('index');
+        Route::get('create', [ExpenseController::class, 'create'])->name('create');
+        Route::post('store', [ExpenseController::class, 'store'])->name('store');
+        Route::post('destroy', [ExpenseController::class, 'destroy'])->name('destroy');
+        Route::post('edit', [ExpenseController::class, 'edit'])->name('edit');
+        Route::post('update', [ExpenseController::class, 'update'])->name('update');
     }
 );

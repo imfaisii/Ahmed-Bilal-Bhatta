@@ -75,7 +75,7 @@
                         <div class="card-body">
                             <div class="media align-items-center">
                                 <div class="media-body mr-3">
-                                    <h2 class="fs-34 text-black font-w600">$5,034</h2>
+                                    <h2 class="fs-34 text-black font-w600">RS 0000</h2>
                                     <span>Overall Earning</span>
                                 </div>
                                 <i class="fad fa-usd-circle fa-3x"></i>
@@ -83,7 +83,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>[]
             <div class="row">
                 <div class="col-xl-6">
                     <div class="row">

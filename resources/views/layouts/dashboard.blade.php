@@ -76,7 +76,7 @@
                                     <img src="{{ asset('images/profile/17.jpg') }}" width="20" alt="" />
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right">
-                                    <a href="{{ asset('app-profile.html') }}" class="dropdown-item ai-icon">
+                                    {{-- <a href="{{ asset('/') }}" class="dropdown-item ai-icon">
                                         <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary"
                                             width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -84,7 +84,7 @@
                                             <circle cx="12" cy="7" r="4"></circle>
                                         </svg>
                                         <span class="ml-2">Profile </span>
-                                    </a>
+                                    </a> --}}
                                     <a href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
                                                                                                                                                   document.getElementById('logout-form').submit();"
@@ -123,9 +123,9 @@
                         <ul aria-expanded="false">
                             <li><a href="{{ route('home') }}">Home</a></li>
                         </ul>
-                        <ul aria-expanded="false">
+                        {{-- <ul aria-expanded="false">
                             <li><a href="index.html">Profile</a></li>
-                        </ul>
+                        </ul> --}}
                     </li>
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
                             <i class="fad fa-user-hard-hat"></i>
@@ -152,10 +152,30 @@
                             <li><a href="{{ route('investment.index') }}">Add Investor Money</a></li>
                         </ul>
                     </li>
-                    <li><a href="#" class="ai-icon" aria-expanded="false">
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                            <i class="fas fa-dollar-sign"></i>
+                            <span class="nav-text">Expenses</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="{{ route('worker.index') }}">Expenses Details</a></li>
+                        </ul>
+                        <ul aria-expanded="false">
+                            <li><a href="{{ route('expenses.create') }}">Add Expense(s)</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
                             <i class="fas fa-piggy-bank"></i>
                             <span class="nav-text">Sales</span>
                         </a>
+                        <ul aria-expanded="false">
+                            <li><a href="{{ route('worker.index') }}">Workers Details</a></li>
+                        </ul>
+                        <ul aria-expanded="false">
+                            <li><a href="{{ route('worker.borrow.index') }}">Borrow/Return Money</a></li>
+                        </ul>
+                        <ul aria-expanded="false">
+                            <li><a href="{{ route('worker.bricksDone.index') }}">Add Work History</a></li>
+                        </ul>
                     </li>
                 </ul>
 
