@@ -25,6 +25,7 @@
                                 <td>{{ $investment->investor->name }}</td>
                                 <td>{{ $investment->receiver->name }}</td>
                                 <td>{{ $investment->amount }}</td>
+                                <td>{{ $investment->created_at }}</td>
                                 <td><a href="javascript:void(0)"
                                         class="btn btn-primary text-nowrap btn-sm light">Completed</a></td>
                                 <td>
@@ -37,7 +38,6 @@
                                                 class="fa fa-trash"></i></button>
                                     </div>
                                 </td>
-                                <td>{{ $investment->created_at }}</td>
                             </tr>
                         @endforeach
                     </tbody>
