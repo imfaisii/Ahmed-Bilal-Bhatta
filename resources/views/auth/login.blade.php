@@ -20,8 +20,9 @@
                             <div class="col-xl-12">
                                 <div class="auth-form">
                                     <div class="text-center mb-3">
-                                        <a href="/"><img src="{{ asset('images/logo-fullB.png') }}" alt="Company Logo"
-                                                width="180px" height="180px"></a>
+                                        <a href="/"><img src="{{ asset('images/logo-fullB.png') }}" style="width: 100%;
+                                                                            background: white;height:100%;"
+                                                alt="Company Logo" width="180px" height="180px"></a>
                                     </div>
                                     <h4 class="text-center mb-4 text-white">Sign in your account</h4>
                                     <form method="POST" action="{{ route('login') }}">
@@ -58,7 +59,8 @@
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <a class="text-white" href="page-forgot-password.html">Forgot Password?</a>
+                                                <a class="text-white" href="page-forgot-password.html">Forgot
+                                                    Password?</a>
                                             </div>
                                         </div>
                                         <div class="text-center">
