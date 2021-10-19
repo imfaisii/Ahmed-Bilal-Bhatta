@@ -224,7 +224,7 @@
     <script src="{{ asset('js/ajaxCall.js') }}"></script>
     <script src="{{ asset('vendor/bootstrap-select/dist/js/bootstrap-select.min.js') }}"></script>
     <script src="{{ asset('js/global.js') }}"></script>
-
+    <script src="{{ asset('js/formula.js') }}"></script>
     @stack('extended_scripts')
     @yield('extended_scripts_blade')
 

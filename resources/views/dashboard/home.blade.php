@@ -56,7 +56,7 @@
                         <div class="card-body">
                             <div class="media align-items-center">
                                 <div class="media-body mr-3">
-                                    <h2 class="fs-34 text-black font-w600">Rs. {{ $investments }}</h2>
+                                    <h2 class="fs-34 text-black font-w600 investmentConverted"></h2>
                                     <span>Total Investment</span>
                                 </div>
                                 <i class="fas fa-sack-dollar fa-3x"></i>
@@ -75,7 +75,7 @@
                         <div class="card-body">
                             <div class="media align-items-center">
                                 <div class="media-body mr-3">
-                                    <h2 class="fs-34 text-black font-w600">Rs. 0000</h2>
+                                    <h2 class="fs-34 text-black font-w600 earningConverted"></h2>
                                     <span>Total Earning</span>
                                 </div>
                                 <i class="fad fa-usd-circle fa-3x"></i>
@@ -95,7 +95,7 @@
                         <div class="card-body">
                             <div class="media align-items-center">
                                 <div class="media-body mr-3">
-                                    <h2 class="fs-34 text-black font-w600">Rs. {{ $expense }}</h2>
+                                    <h2 class="fs-34 text-black font-w600 expenditureConverted"></h2>
                                     <span>Total Expenditure &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( Kharcha )</span>
                                 </div>
                                 <i class="fas fa-hand-holding-usd fa-3x"></i>
@@ -152,7 +152,7 @@
                         <div class="card-body">
                             <div class="media align-items-center">
                                 <div class="media-body mr-3">
-                                    <h2 class="fs-34 text-black font-w600">{{ $investments }}</h2>
+                                    <h2 class="fs-34 text-black font-w600 investmentConverted"></h2>
                                     <span>Total Investment</span>
                                 </div>
                                 <i class="fas fa-sack-dollar fa-3x"></i>
@@ -1003,4 +1003,14 @@
     </div>
     {{-- Content body end --}}
     {{-- Main wrapper end --}}
+@endsection
+@section('extended_scripts_blade')
+    <script>
+        let investment = @json($investments);
+        let expense = @json($expense);
+        let earningConverted = 10000;
+        $(".investmentConverted").html("Rs. " + convertToInternationalCurrencySystem(investment));
+        $(".expenditureConverted").html("Rs. " + convertToInternationalCurrencySystem(expense));
+        $(".earningConverted").html("Rs. " + convertToInternationalCurrencySystem(earningConverted));
+    </script>
 @endsection
