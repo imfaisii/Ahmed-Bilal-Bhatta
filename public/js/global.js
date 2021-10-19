@@ -14,7 +14,6 @@ function deleteById(id, url, tableId, model) {
     }).then((result) => {
         if (result.isConfirmed) {
             dynamicAjax(url, "POST", formData, tableId, "delete", model, "");
-            Swal.fire("Deleted!", "Your file has been deleted.", "success");
         }
     });
 }
@@ -35,5 +34,13 @@ function populate(data, model) {
         $("[name=investor_id]").val(data.investor.id);
         $("[name=user_id]").val(data.receiver.name);
         $("[name=amount]").val(data.amount);
+    } else if (model == "Expense") {
+        $("[name=amount]").val(data.amount);
+        $("[name=comments]").val(data.comments);
+        $("[name=description]").val(data.khatatypes[0]["description"]);
+        $("select").val(data.khatatypes[0]["id"]);
+    } else if (model == "khatatype") {
+        $("[name=name]").val(data.name);
+        $("[name=description]").val(data.description);
     }
 }

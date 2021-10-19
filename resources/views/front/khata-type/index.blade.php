@@ -9,24 +9,23 @@
     <div class="content-body">
         <div class="container-fluid">
             <div class="page-titles">
-                <h4>Expenses Area</h4>
+                <h4>Khata Categories Area</h4>
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="javascript:void(0)">Expenses</a></li>
+                    <li class="breadcrumb-item"><a href="javascript:void(0)">Khata Types</a></li>
                     <li class="breadcrumb-item active"><a href="javascript:void(0)">Details</a></li>
                 </ol>
             </div>
         </div>
-        <x-expenses-table />
-        <x-expense-edit-modal />
+        <x-khata-types-table />
+        <x-modal-new-khata-type />
     </div>
 @endsection
 
 @push('extended_scripts')
 
     <!-- Datatable -->
-    <script src="{{ asset('./js/ajaxCall.js') }}"></script>
-    <script src="{{ asset('js/expenses/edit.js') }}"></script>
-    <script src="{{ asset('js/expenses/khataType.js') }}"></script>
+    <script src="{{ asset('js/khata-type/addKhataType.js') }}"></script>
+    <script src="{{ asset('js/khata-type/edit.js') }}"></script>
     @include('vendors.validate')
     @include('vendors.sweet')
 

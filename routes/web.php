@@ -4,6 +4,7 @@ use App\Http\Controllers\BricksDoneController;
 use App\Http\Controllers\ExpenseController;
 use App\Http\Controllers\InvestmentMoneyController;
 use App\Http\Controllers\InvestorController;
+use App\Http\Controllers\KhataTypeController;
 use App\Http\Controllers\WorkerBorrowNreturnController;
 use App\Http\Controllers\WorkerController;
 use App\Models\InvestmentMoney;
@@ -95,5 +96,21 @@ Route::group(
         Route::post('destroy', [ExpenseController::class, 'destroy'])->name('destroy');
         Route::post('edit', [ExpenseController::class, 'edit'])->name('edit');
         Route::post('update', [ExpenseController::class, 'update'])->name('update');
+    }
+);
+
+Route::group(
+    [
+        'middleware' => 'auth',
+        'prefix' => 'front/khata-types',
+        'as' => 'khata-types.'
+    ],
+    function () {
+        Route::get('index', [KhataTypeController::class, 'index'])->name('index');
+        Route::get('create', [KhataTypeController::class, 'create'])->name('create');
+        Route::post('store', [KhataTypeController::class, 'store'])->name('store');
+        Route::post('destroy', [KhataTypeController::class, 'destroy'])->name('destroy');
+        Route::post('edit', [KhataTypeController::class, 'edit'])->name('edit');
+        Route::post('update', [KhataTypeController::class, 'update'])->name('update');
     }
 );

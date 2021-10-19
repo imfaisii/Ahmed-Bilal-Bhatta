@@ -128,7 +128,6 @@ class WorkerController extends Controller
      */
     public function destroy(Request $request)
     {
-        // return $request->all();
         if (Worker::find($request->id)->delete()) {
             return response()->json(['message' => 'Worker Deleted Successfully!!', 'status' => 200], 200);
         }

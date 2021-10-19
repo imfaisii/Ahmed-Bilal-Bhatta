@@ -45,7 +45,7 @@ class InvestmentMoneyController extends Controller
             $create = InvestmentMoney::create($request->validated());
             if ($create) {
                 DB::commit();
-                return response()->json(['message' => 'Investor Updated successfully!', 'status' => 200], 200);
+                return response()->json(['message' => 'Investor added successfully!', 'status' => 200], 200);
             } else {
                 DB::rollBack();
                 return response()->json(['message' => 'Invalid Data supplied! Please try again!', 'status' => 422], 422);
@@ -102,7 +102,6 @@ class InvestmentMoneyController extends Controller
      */
     public function destroy(Request $request)
     {
-        //
         if (InvestmentMoney::find($request->id)->delete()) {
             return response()->json(['message' => 'Investor Deleted Successfully!!', 'status' => 200], 200);
         }

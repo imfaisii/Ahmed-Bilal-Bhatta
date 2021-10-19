@@ -32,7 +32,7 @@
                                             onclick="openEditModal('{{ route('investment.edit', [$investment->id]) }}','{{ $investment->id }}')"><i
                                                 class="fa fa-pencil"></i></button>
                                         <button class="btn btn-danger shadow btn-xs sharp"
-                                        onclick="deleteById({{ $investment->id }},'{{ route('investment.destroy') }}','example','Investor')"><i
+                                            onclick="deleteById({{ $investment->id }},'{{ route('investment.destroy') }}','example','Investor')"><i
                                                 class="fa fa-trash"></i></button>
                                     </div>
                                 </td>

@@ -2,9 +2,10 @@
 
 namespace App\View\Components;
 
+use App\Models\Expense;
 use Illuminate\View\Component;
 
-class InvestmentMoneyIndex extends Component
+class ExpensesTable extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +24,6 @@ class InvestmentMoneyIndex extends Component
      */
     public function render()
     {
-        return view('components.investment-money-index');
+        return view('components.expenses-table')->with('expenses', Expense::with(['khatatypes', 'user'])->get());
     }
 }

@@ -19,8 +19,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 </head>
@@ -157,10 +158,13 @@
                             <span class="nav-text">Expenses</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="{{ route('worker.index') }}">Expenses Details</a></li>
+                            <li><a href="{{ route('expenses.index') }}">Expenses Details</a></li>
                         </ul>
                         <ul aria-expanded="false">
                             <li><a href="{{ route('expenses.create') }}">Add Expense(s)</a></li>
+                        </ul>
+                        <ul aria-expanded="false">
+                            <li><a href="{{ route('khata-types.index') }}">New expense/khata type</a></li>
                         </ul>
                     </li>
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">

@@ -37,13 +37,13 @@ function CustomToaster(type, message, heading) {
     eval(data);
 }
 
-function dynamicAjax(fileName, reqType, dataObj, tableId, callType, model) {
+function dynamicAjax(url, method, data, tableId, callType, model) {
     $.ajax({
-        url: fileName,
-        method: reqType,
+        url: url,
+        method: method,
         contentType: false,
         processData: false,
-        data: dataObj,
+        data: data,
         dataType: "json",
         beforeSend: function () {
             $("#preloader").css({
@@ -59,7 +59,24 @@ function dynamicAjax(fileName, reqType, dataObj, tableId, callType, model) {
                 callType == "delete" ||
                 callType == "update"
             ) {
+                if (callType == "delete") {
+                    data.status == 200
+                        ? Swal.fire(
+                              "Deleted!",
+                              "Your file has been deleted.",
+                              "success"
+                          )
+                        : Swal.fire(
+                              "Deleted!",
+                              "Failed to delete the request record",
+                              "error"
+                          );
+                }
                 newCall(data.status, data.message, tableId);
+            } else if (callType == "expense") {
+                data.status == 200
+                    ? CustomToaster("success", data.message, "Notification")
+                    : CustomToaster("error", data.message, "Notification");
             } else {
                 populate(data, model);
             }
@@ -75,6 +92,12 @@ function dynamicAjax(fileName, reqType, dataObj, tableId, callType, model) {
                 CustomToaster(
                     "error",
                     response.responseJSON.message,
+                    "Notification"
+                );
+            } else if (response.status == 409) {
+                CustomToaster(
+                    "error",
+                    response.responseJSON.exception,
                     "Notification"
                 );
             } else {

@@ -10,7 +10,15 @@ $(document).on("change", ".khataTypeChange", function (e) {
 
 $("#AddExpenseForm").submit(function (e) {
     e.preventDefault();
+    var formData = new FormData($(this)[0]);
     if ($(this).valid()) {
-        this.submit();
+        // this.submit();
+        dynamicAjax(
+            $(this).attr("action"),
+            $(this).attr("method"),
+            formData,
+            "",
+            "expense"
+        );
     }
 });
