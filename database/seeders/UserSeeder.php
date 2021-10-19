@@ -16,26 +16,25 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        $admin =  array([
-            'name' => 'Ahmed Bilal',
-            'email' => 'ahmedbilal@bhatta.com',
-            'password' => Hash::make('206445'),
-        ]);
-        $admin =  array([
-            'name' => 'Ashfaq Ahmed',
-            'email' => 'ashfaqahmed@bhatta.com',
-            'password' => Hash::make('206445'),
-        ]);
-        $admin =  array([
-            'name' => 'Zulfiqar Ahmed',
-            'email' => 'zulfiqar@bhatta.com',
-            'password' => Hash::make('206445'),
-        ]);
-        $admin =  array([
-            'name' => 'Nasir Mehmood',
-            'email' => 'nasirmehmood@bhatta.com',
-            'password' => Hash::make('206445'),
-        ]);
+        $admin =  array(
+            [
+                'name' => 'Ahmed Bilal',
+                'email' => 'ahmedbilal@bhatta.com',
+                'password' => Hash::make('206445'),
+            ], [
+                'name' => 'Ashfaq Ahmed',
+                'email' => 'ashfaqahmed@bhatta.com',
+                'password' => Hash::make('206445'),
+            ], [
+                'name' => 'Zulfiqar Ahmed',
+                'email' => 'zulfiqar@bhatta.com',
+                'password' => Hash::make('206445'),
+            ], [
+                'name' => 'Nasir Mehmood',
+                'email' => 'nasirmehmood@bhatta.com',
+                'password' => Hash::make('206445'),
+            ]
+        );
         DB::table('users')->insert($admin);
     }
 }
