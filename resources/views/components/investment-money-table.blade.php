@@ -11,11 +11,12 @@
                 <table id="example" class="display min-w850">
                     <thead>
                         <tr>
-                            <th width="20%">Invested By</th>
+                            <th width="15%">Invested By</th>
                             <th width="15%">Received By</th>
                             <th width="15%">Amount</th>
+                            <th width="10%">Investod on</th>
                             <th width="20%">Status</th>
-                            <th width="15%">Action</th>
+                            <th width="10%">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -36,16 +37,18 @@
                                                 class="fa fa-trash"></i></button>
                                     </div>
                                 </td>
+                                <td>{{ $investment->created_at }}</td>
                             </tr>
                         @endforeach
                     </tbody>
                     <tfoot>
                         <tr>
-                            <th width="20%">Invested By</th>
+                            <th width="15%">Invested By</th>
                             <th width="15%">Received By</th>
                             <th width="15%">Amount</th>
+                            <th width="10%">Investod on</th>
                             <th width="20%">Status</th>
-                            <th width="15%">Action</th>
+                            <th width="10%">Action</th>
                         </tr>
                     </tfoot>
                 </table>
