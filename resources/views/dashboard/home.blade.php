@@ -133,7 +133,7 @@
                         <div class="card-body">
                             <div class="media align-items-center">
                                 <div class="media-body mr-3">
-                                    <h2 class="fs-34 text-black font-w600">{{ $investments }}</h2>
+                                    <h2 class="fs-34 text-black font-w600">{{ $bricks_produced }}</h2>
                                     <span>Total Bricks Sold</span>
                                 </div>
                                 <i class="fas fa-cube fa-3x"></i>
