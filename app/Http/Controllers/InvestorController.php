@@ -61,7 +61,7 @@ class InvestorController extends Controller
             ]);
             if ($create) {
                 DB::commit();
-                return response()->json(['message' => 'Worker Added successfully!', 'status' => 200], 200);
+                return response()->json(['message' => 'Investor Added successfully!', 'status' => 200], 200);
             } else {
                 DB::rollBack();
                 return response()->json(['message' => 'Failed to add new record!', 'status' => 309], 309);
