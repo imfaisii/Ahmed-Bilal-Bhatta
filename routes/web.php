@@ -5,6 +5,7 @@ use App\Http\Controllers\ExpenseController;
 use App\Http\Controllers\InvestmentMoneyController;
 use App\Http\Controllers\InvestorController;
 use App\Http\Controllers\KhataTypeController;
+use App\Http\Controllers\RestrictionsController;
 use App\Http\Controllers\WorkerBorrowNreturnController;
 use App\Http\Controllers\WorkerController;
 use App\Models\InvestmentMoney;
@@ -32,34 +33,49 @@ Route::get('/register', function () {
 
 Auth::routes();
 
-Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::group(
+    [
+        'middleware' => 'access-restriction',
+    ],
+    function () {
+        Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    }
+);
+
+Route::group(
+    [
+        'middleware' => ['auth', 'access-restriction'],
+    ],
+    function () {
 
 
-// workers routes
-Route::get('workers/index', [WorkerController::class, 'index'])->name('worker.index');
-Route::post('workers/store', [WorkerController::class, 'store'])->name('worker.store');
-Route::post('workers/delete', [WorkerController::class, 'destroy'])->name('worker.destroy');
-Route::post('workers/edit', [WorkerController::class, 'edit'])->name('worker.edit');
-Route::post('workers/update', [WorkerController::class, 'update'])->name('worker.update');
-Route::get('workers/alldata', [WorkerController::class, 'data'])->name('worker.data');
+        // workers routes
+        Route::get('workers/index', [WorkerController::class, 'index'])->name('worker.index');
+        Route::post('workers/store', [WorkerController::class, 'store'])->name('worker.store');
+        Route::post('workers/delete', [WorkerController::class, 'destroy'])->name('worker.destroy');
+        Route::post('workers/edit', [WorkerController::class, 'edit'])->name('worker.edit');
+        Route::post('workers/update', [WorkerController::class, 'update'])->name('worker.update');
+        Route::get('workers/alldata', [WorkerController::class, 'data'])->name('worker.data');
 
-// workers borrow routes
-Route::get('workers/borrowNreturn/index', [WorkerBorrowNreturnController::class, 'index'])->name('worker.borrow.index');
-Route::post('workers/borrowNreturn/borrowNow', [WorkerBorrowNreturnController::class, 'borrow_amount'])->name('worker.borrow');
-Route::post('workers/borrowNreturn/returnNow', [WorkerBorrowNreturnController::class, 'return_amount'])->name('worker.return');
-Route::get('workers/borrowNreturn/history/{id}', [WorkerBorrowNreturnController::class, 'history'])->name('worker.history');
+        // workers borrow routes
+        Route::get('workers/borrowNreturn/index', [WorkerBorrowNreturnController::class, 'index'])->name('worker.borrow.index');
+        Route::post('workers/borrowNreturn/borrowNow', [WorkerBorrowNreturnController::class, 'borrow_amount'])->name('worker.borrow');
+        Route::post('workers/borrowNreturn/returnNow', [WorkerBorrowNreturnController::class, 'return_amount'])->name('worker.return');
+        Route::get('workers/borrowNreturn/history/{id}', [WorkerBorrowNreturnController::class, 'history'])->name('worker.history');
 
 
-// bricks routes
-Route::get('workers/bricksDone/index', [BricksDoneController::class, 'index'])->name('worker.bricksDone.index');
-Route::post('workers/bricksDone/addBricks', [BricksDoneController::class, 'create'])->name('worker.add.bricksDone');
-Route::get('workers/bricksDone/view/{id}', [BricksDoneController::class, 'view'])->name('worker.bricksDone.view');
+        // bricks routes
+        Route::get('workers/bricksDone/index', [BricksDoneController::class, 'index'])->name('worker.bricksDone.index');
+        Route::post('workers/bricksDone/addBricks', [BricksDoneController::class, 'create'])->name('worker.add.bricksDone');
+        Route::get('workers/bricksDone/view/{id}', [BricksDoneController::class, 'view'])->name('worker.bricksDone.view');
+    }
+);
 
 // investor routes start here
 
 Route::group(
     [
-        'middleware' => 'auth',
+        'middleware' => ['auth', 'access-restriction'],
         'prefix' => 'front/',
         'as' => 'investor.'
     ],
@@ -74,7 +90,7 @@ Route::group(
 
 Route::group(
     [
-        'middleware' => 'auth',
+        'middleware' => ['auth', 'access-restriction'],
         'prefix' => 'front/investments',
         'as' => 'investment.'
     ],
@@ -89,7 +105,7 @@ Route::group(
 
 Route::group(
     [
-        'middleware' => 'auth',
+        'middleware' => ['auth', 'access-restriction'],
         'prefix' => 'front/expenses',
         'as' => 'expenses.'
     ],
@@ -105,7 +121,7 @@ Route::group(
 
 Route::group(
     [
-        'middleware' => 'auth',
+        'middleware' => ['auth', 'access-restriction'],
         'prefix' => 'front/khata-types',
         'as' => 'khata-types.'
     ],
@@ -116,5 +132,17 @@ Route::group(
         Route::post('destroy', [KhataTypeController::class, 'destroy'])->name('destroy');
         Route::post('edit', [KhataTypeController::class, 'edit'])->name('edit');
         Route::post('update', [KhataTypeController::class, 'update'])->name('update');
+    }
+);
+
+Route::group(
+    [
+        'middleware' => ['auth', 'access-restriction'],
+        'prefix' => 'front/restrictions',
+        'as' => 'restrictions.'
+    ],
+    function () {
+        Route::get('index', [RestrictionsController::class, 'index'])->name('index');
+        Route::post('update', [RestrictionsController::class, 'update'])->name('update');
     }
 );

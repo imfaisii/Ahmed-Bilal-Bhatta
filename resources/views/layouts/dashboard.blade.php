@@ -181,6 +181,16 @@
                             <li><a href="{{ route('worker.bricksDone.index') }}">Add Work History</a></li>
                         </ul>
                     </li>
+                    @if (Auth::user()->id == 1 || Auth::user()->id == 2)
+                        <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                                <i class="fa fa-address-card" aria-hidden="true"></i>
+                                <span class="nav-text">Acces Restrictions</span>
+                            </a>
+                            <ul aria-expanded="false">
+                                <li><a href="{{ route('restrictions.index') }}">View Details</a></li>
+                            </ul>
+                        </li>
+                    @endif
                 </ul>
 
                 <div class="copyright">
